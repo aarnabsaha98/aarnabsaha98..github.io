@@ -17,6 +17,7 @@ body {
 .primary-container {
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
@@ -60,7 +61,7 @@ body {
 
 .header {
     overflow: hidden;
-    background-color: rgba(44, 46, 51, 0.7);
+    background-color: rgba(225, 225, 225, 0.4);
     padding: 30px;
     position: fixed;
     top: 0;
@@ -88,24 +89,23 @@ body {
 }
 
 .about-container{
-
-    
     margin: 700px;
     padding: 50px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-   
+      
 }
 .article-section{
-
+    position: relative;
+    /* right: 50px; */
     color: black;
     width: 410px;
     font-size: 20px;
     text-align: left;
     text-overflow: ellipsis;
     word-wrap: break-word;
+    word-break: keep-all;
 }
 
 
@@ -118,16 +118,12 @@ body {
         display: block;
         text-align: left;
         height: 100%;
-
     }
 
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 401px) {
     .body{
         height: 100%;
-    }
-        .about-container{
-        float: none;
     }
 }
