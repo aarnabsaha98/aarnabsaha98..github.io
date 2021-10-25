@@ -9,21 +9,23 @@ body {
     max-width: 500%;
     height: 100%;
     box-sizing: border-box;
-    background-image: url("nightSky.jpg");
+    background-image: url("light1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .primary-container {
+
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: nowrap;
-    margin: 10px;
-    padding-top: 100px;
+    margin: 20px;
+    padding-top: 250px;
 }
 
 .h2-name-tag {
-    color: white;
+    color: black;
     font-size: 4pc;
 }
 
@@ -32,10 +34,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    margin: 30px;
 }
 
 .h2-details-tag {
-    color: white;
+    color: black;
     font-size: 20px;
 }
 
@@ -50,7 +53,7 @@ body {
     padding: 10px;
     margin: 5px;
     background-color: transparent;
-    color: white;
+    color: black;
     text-align: center;
     font-size: 1pc;
 }
@@ -59,6 +62,12 @@ body {
     overflow: hidden;
     background-color: rgba(44, 46, 51, 0.7);
     padding: 30px;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    transition: 0.2s;
+    font-size: 20px;
+
 }
 
 .header-right {
@@ -66,7 +75,7 @@ body {
 }
 
 .header-right a {
-    color: white;
+    color: black;
     text-align: center;
     padding: 15px;
     margin: 10px;
@@ -78,7 +87,29 @@ body {
     background-color: dodgerblue;
 }
 
-@media screen and (max-width: 500px) {
+.about-container{
+
+    
+    margin: 700px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+   
+}
+.article-section{
+
+    color: black;
+    width: 410px;
+    font-size: 20px;
+    text-align: left;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 400px) {
     .header-right {
         float: none;
     }
@@ -86,6 +117,17 @@ body {
         float: none;
         display: block;
         text-align: left;
+        height: 100%;
+
     }
+
 }
 
+@media screen and (min-width: 100px) {
+    .body{
+        height: 100%;
+    }
+        .about-container{
+        float: none;
+    }
+}
